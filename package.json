@@ -1,0 +1,32 @@
+{
+  "name": "cactus-plot",
+  "version": "1.1.4",
+  "description": "A simple library for creating cactus plots, with React support",
+  "main": "dist/CactusPlot.js",
+  "exports": {
+    ".": "./dist/CactusPlot.js",
+    "./react": "./dist/ReactCactusPlot.js"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist --extensions '.js,.jsx'",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cactus",
+    "plot",
+    "chart",
+    "graph",
+    "react"
+  ],
+  "author": "TOK",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-react": "^7.24.1"
+  }
+}
